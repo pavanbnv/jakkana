@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "field-definition.component.sass"
+    ],
+    "names": [],
+    "file": "field-definition.component.css"
+}

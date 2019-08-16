@@ -1,0 +1,6 @@
+@import './alpha-navbar/alpha-navbar-theme';
+
+@mixin w-navbars-theme($theme) {
+
+    @include alpha-navbar-theme($theme)
+}

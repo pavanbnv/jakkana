@@ -1,0 +1,39 @@
+homepage {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 56px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+app-alpha-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+homepage > app-component-sidenav {
+  flex: 1;
+}
+
+homepage > app-homepage,
+homepage > app-guides,
+homepage > guide-viewer {
+  overflow-y: auto;
+}
+
+@media (max-width: 720px) {
+  homepage {
+    top: 92px;
+  }
+
+  homepage > app-homepage,
+  homepage > app-guides,
+  homepage > guide-viewer {
+    overflow-y: visible;
+  }
+}
