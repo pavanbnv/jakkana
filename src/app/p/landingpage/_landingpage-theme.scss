@@ -1,0 +1,25 @@
+@mixin landing-page-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  app-landingpage {
+    .app-landingpage-background {
+      background: mat-color($primary);
+    }
+
+    .app-landingpage-headline {
+      color: mat-color($primary, default-contrast);
+    }
+
+    .app-landingpage-start {
+      color: mat-color($primary);
+    }
+
+    .app-landingpage-row {
+      color: mat-color($foreground, secondary-text);
+    }
+  }
+}

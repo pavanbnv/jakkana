@@ -1,4 +1,4 @@
-homepage {
+app-homepage {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -9,31 +9,31 @@ homepage {
 }
 
 app-alpha-navbar {
-  position: fixed;
+  // position: fixed; //this is commented because we need control over navbar
   top: 0;
   left: 0;
   right: 0;
   z-index: 2;
 }
 
-homepage > app-component-sidenav {
+app-homepage > app-component-sidenav {
   flex: 1;
 }
 
-homepage > app-homepage,
-homepage > app-guides,
-homepage > guide-viewer {
+app-homepage > app-app-homepage,
+app-homepage > app-guides,
+app-homepage > guide-viewer {
   overflow-y: auto;
 }
 
 @media (max-width: 720px) {
-  homepage {
+  app-homepage {
     top: 92px;
   }
 
-  homepage > app-homepage,
-  homepage > app-guides,
-  homepage > guide-viewer {
+  app-homepage > app-app-homepage,
+  app-homepage > app-guides,
+  app-homepage > guide-viewer {
     overflow-y: visible;
   }
 }

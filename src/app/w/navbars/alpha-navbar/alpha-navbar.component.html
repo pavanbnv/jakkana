@@ -1,17 +1,21 @@
 <!-- TODO: figure out if the <nav> should go inside of a <header> element. -->
-<nav class="docs-navbar-header" [class.is-next-version]="isNextVersion">
-    <a mat-button class="docs-button" routerLink="/" aria-label="Angular Material">
+<nav class="docs-navbar-header mat-elevation-z6" [class.is-next-version]="isNextVersion">
+    <a mat-button class="docs-button" routerLink="/" aria-label="Company">
         <img class="docs-angular-logo" src="../../../assets/img/homepage/angular-white-transparent.svg" alt="angular">
         <span>Material</span>
     </a>
-    <a mat-button class="docs-navbar-hide-small docs-button" *ngFor="let key of sectionKeys" [routerLink]="key">{{sections[key].name}}</a>
-    <a mat-button class="docs-navbar-hide-small docs-button" routerLink="guides">Guides</a>
+    <!--<a mat-button class="docs-navbar-hide-small docs-button" *ngFor="let key of sectionKeys" [routerLink]="key">{{sections[key].name}}</a>-->
+    <a mat-button class="docs-navbar-hide-small docs-button"  routerLink="/">iflow</a>
+    <div class="docs-header-start">
+     <a mat-button class="docs-button" routerLink="/fb">Get started</a>
+    </div>
     <div class="flex-spacer"></div>
     <!--<version-picker></version-picker>
     <theme-picker></theme-picker> -->
     <a mat-button class="docs-button docs-navbar-hide-small" href="https://github.com/angular/components" aria-label="GitHub Repository">
          GitHub
     </a>
+    
     <a mat-icon-button class="docs-button docs-navbar-show-small" href="https://github.com/angular/components" aria-label="GitHub Repository">
         
     </a>

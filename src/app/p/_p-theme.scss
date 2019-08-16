@@ -1,7 +1,8 @@
-@import './navbars/navbars-theme';
-@import './sidebars/sidebars-theme';
+@import './homepage/homepage-theme';
+@import './footer/footer-theme';
+@import './landingpage/landingpage-theme';
 // Styles for the docs app that are based on the current theme.
-@mixin jakkana-w-theme($theme) {
+@mixin jakkana-p-theme($theme) {
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
   $warn: map-get($theme, warn);
@@ -32,6 +33,7 @@
   }
 
 
-  @include w-navbars-theme($theme);
-  @include w-sidebars-theme($theme);
+  @include footer-theme($theme);
+  @include homepage-theme($theme);
+  @include landingpage-theme($theme);
 }

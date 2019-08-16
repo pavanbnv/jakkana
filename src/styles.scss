@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 $fa-font-path: "~font-awesome/fonts/";
 @import '~@angular/material/theming';
-@import '~font-awesome/scss/font-awesome';
-/*@import '~bootstrap/scss/bootstrap'*/
+//@import '~font-awesome/scss/font-awesome';
+@import '~bootstrap/scss/bootstrap';
 
 @import 'app-theme';
 /**@import '~@angular/material/prebuilt-themes/deeppurple-amber.css'*/

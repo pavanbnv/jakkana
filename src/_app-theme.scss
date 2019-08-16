@@ -1,5 +1,5 @@
 @import './app/w/w-theme';
-
+@import './app/p/p-theme';
 
 
 // Styles for the docs app that are based on the current theme.
@@ -11,7 +11,7 @@
   $foreground: map-get($theme, foreground);
   $next-theme: mat-palette($mat-red);
 
-  .docs-app-background {
+  .jakkana-app-background {
     background: mat-color($background, background);
   }
 
