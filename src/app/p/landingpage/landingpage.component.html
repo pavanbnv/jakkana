@@ -1,71 +1,67 @@
-<header class="apps-header-background"
-        [class.is-next-version]="isNextVersion">
-  <div class="apps-header-section">
-    <div class="apps-header-headline">
-      <h1 class="mat-h1">intelliFlow</h1>
-      <h2> Create your application</h2>
-    </div>
-    
-  <mat-form-field class="example-full-width">
-    <input [(ngModel)]="appName" matInput placeholder="Application name" value="">
-  </mat-form-field>
+<header class="apps-header-background" [class.is-next-version]="isNextVersion">
+    <div class="apps-header-section">
+        <div class="apps-header-headline">
+            <h1 class="mat-h1">intelliflow</h1>
+            <h2> Create your application</h2>
+        </div>
+
+        <mat-form-field class="example-full-width">
+            <input [(ngModel)]="appName" matInput placeholder="Application name" value="">
+        </mat-form-field>
 
 
-    <div class="apps-header-start">
-     <a mat-raised-button class="apps-button" (click)="setTitle( 'Good morning!' )" routerLink="/fb">Get started</a>
+        <div class="apps-header-start">
+            <a mat-raised-button class="apps-button" (click)="setTitle( 'Good morning!' )" routerLink="/fb">Get started</a>
+        </div>
     </div>
-  </div>
 </header>
 
 <div class="apps-homepage-promo">
-  <div class="apps-homepage-row">
-    <div class="apps-homepage-promo-img">
-      <!--<!--<apps-svg-viewer
+    <div class="apps-homepage-row">
+        <div class="apps-homepage-promo-img">
+            <!--<!--<apps-svg-viewer
           src="../assets/img/homepage/sprintzerotoapp.svg"
-          scaleToContainer="true"></apps-svg-viewer>--> -->
+          scaleToContainer="true"></apps-svg-viewer>-->-->
+        </div>
+        <div class="apps-homepage-promo-desc">
+            <h2>Sprint from Zero to App</h2>
+            <p>Hit the ground running with comprehensive, modern UI components that work across the web, mobile and desktop.</p>
+        </div>
     </div>
-    <div class="apps-homepage-promo-desc">
-      <h2>Sprint from Zero to App</h2>
-      <p>Hit the ground running with comprehensive, modern UI components that work across
-        the web, mobile and desktop.</p>
-    </div>
-  </div>
-  <div class="apps-homepage-row apps-homepage-reverse-row">
-    <div class="apps-homepage-promo-img">
-      <!--<apps-svg-viewer
+    <div class="apps-homepage-row apps-homepage-reverse-row">
+        <div class="apps-homepage-promo-img">
+            <!--<apps-svg-viewer
           src="../assets/img/homepage/fastandconsistent.svg"
           scaleToContainer="true"></apps-svg-viewer>-->
+        </div>
+        <div class="apps-homepage-promo-desc">
+            <h2>Fast and Consistent</h2>
+            <p>Finely tuned performance, because every millisecond counts. Fully tested across modern browsers.</p>
+        </div>
     </div>
-    <div class="apps-homepage-promo-desc">
-      <h2>Fast and Consistent</h2>
-      <p>Finely tuned performance, because every millisecond counts. Fully tested across
-        modern browsers.</p>
-    </div>
-  </div>
-  <div class="apps-homepage-row">
-    <div class="apps-homepage-promo-img">
-      <!--<apps-svg-viewer
+    <div class="apps-homepage-row">
+        <div class="apps-homepage-promo-img">
+            <!--<apps-svg-viewer
           src="../assets/img/homepage/versatile.svg"
           scaleToContainer="true"></apps-svg-viewer>-->
+        </div>
+        <div class="apps-homepage-promo-desc">
+            <h2>Versatile</h2>
+            <p>Themable, for when you need to stay on brand or just have a favorite color. Accessible and internationalized so that all users are welcome.</p>
+        </div>
     </div>
-    <div class="apps-homepage-promo-desc">
-      <h2>Versatile</h2>
-      <p>Themable, for when you need to stay on brand or just have a favorite color.
-        Accessible and internationalized so that all users are welcome.</p>
-    </div>
-  </div>
-  <div class="apps-homepage-row apps-homepage-reverse-row">
-    <div class="apps-homepage-promo-img">
-      <!--<apps-svg-viewer
+    <div class="apps-homepage-row apps-homepage-reverse-row">
+        <div class="apps-homepage-promo-img">
+            <!--<apps-svg-viewer
         src="../assets/img/homepage/optimized.svg"
         scaleToContainer="true"></apps-svg-viewer>-->
+        </div>
+        <div class="apps-homepage-promo-desc">
+            <h2>Optimized for Angular</h2>
+            <p>Built by the Angular team to integrate seamlessly with Angular.</p>
+        </div>
     </div>
-    <div class="apps-homepage-promo-desc">
-      <h2>Optimized for Angular</h2>
-      <p>Built by the Angular team to integrate seamlessly with Angular.</p>
+    <div class="apps-homepage-bottom-start">
+        <a mat-raised-button class="apps-button" routerLink="/guide/getting-started">Get started</a>
     </div>
-  </div>
-  <div class="apps-homepage-bottom-start">
-    <a mat-raised-button class="apps-button" routerLink="/guide/getting-started">Get started</a>
-  </div>
 </div>
