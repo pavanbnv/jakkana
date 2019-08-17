@@ -1,6 +1,4 @@
 @import './alpha-sidebar/alpha-sidebar-theme';
-
 @mixin w-sidebars-theme($theme) {
-
-    @include alpha-sidebar-theme($theme)
+    @include alpha-sidebar-theme($theme);
 }
