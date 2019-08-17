@@ -1,16 +1,16 @@
 @mixin alpha-sidebar-theme($theme) {
-  $primary: map-get($theme, primary);
-  $accent: map-get($theme, accent);
-  $warn: map-get($theme, warn);
-  $background: map-get($theme, background);
-  $foreground: map-get($theme, foreground);
-
-  app-alpha-sidebar {
-    //  color: mat-color($primary, default-contrast);
-
-    .docs-sidebar, .docs-sidebar-header {
-      background: mat-color($primary);
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+    $warn: map-get($theme, warn);
+    $background: map-get($theme, background);
+    $foreground: map-get($theme, foreground);
+    app-alpha-sidebar {
+        //  color: mat-color($primary, default-contrast);
+        .widget,
+        .docs-sidebar,
+        .docs-sidebar-header {
+            background: mat-color($primary);
+            color: mat-color($primary, default-contrast);
+        }
     }
-  }
 }
-
