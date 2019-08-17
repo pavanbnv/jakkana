@@ -9,6 +9,10 @@ import { FieldDefinitionComponent } from './w/form/field-definition/field-defini
 import { NavigationComponent } from './w/navbars/navigation.component';
 import { AlphaNavbarComponent } from './w/navbars/alpha-navbar/alpha-navbar.component';
 import { AlphaSidebarComponent } from './w/sidebars/alpha-sidebar/alpha-sidebar.component';
+import { FontAwesomeModule,FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -51,6 +55,7 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatListModule,
     FormsModule,
+    FontAwesomeModule,
     RouterModule,
     AppRoutingModule
   ],
@@ -59,4 +64,8 @@ import { FormsModule } from '@angular/forms';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(lib: FaIconLibrary) {
+    lib.addIconPacks(fas, far);
+  }
+}
