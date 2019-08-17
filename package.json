@@ -42,6 +42,7 @@
         "style-loader": "^1.0.0",
         "tslib": "^1.10.0",
         "typeface-roboto": "0.0.75",
+        "yaml": "^1.6.0",
         "zone.js": "~0.9.1"
     },
     "devDependencies": {

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 import { AlphaToolbarComponent } from './x/toolbars/alpha-toolbar/alpha-toolbar.component';
 import { AlphaCardComponent } from './x/cards/alpha-card/alpha-card.component';
 import { FieldDefinitionComponent } from './w/form/field-definition/field-definition.component';
@@ -28,6 +29,10 @@ import { FlowbuilderComponent } from './p/flowbuildermainpage/flowbuilder/flowbu
 import { FooterComponent } from './p/footer/footer.component';
 import { LandingpageComponent } from './p/landingpage/landingpage.component';
 import { FormsModule } from '@angular/forms';
+import { InnerpageHeaderComponent } from './w/innerpage-header/innerpage-header.component';
+import { FlowbuilderContentComponent } from './w/flowbuilder-content/flowbuilder-content.component';
+import { MenuListenerXComponent } from './w/menu-listener-x/menu-listener-x.component';
+import { FlowbuilderContainerComponent } from './w/flowbuilder-container/flowbuilder-container.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +45,11 @@ import { FormsModule } from '@angular/forms';
     HomepageComponent,
     FlowbuilderComponent,
     FooterComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    InnerpageHeaderComponent,
+    FlowbuilderContentComponent,
+    MenuListenerXComponent,
+    FlowbuilderContainerComponent
   ],
   imports: [
     BrowserModule,
@@ -56,6 +65,7 @@ import { FormsModule } from '@angular/forms';
     MatListModule,
     FormsModule,
     FontAwesomeModule,
+    DragDropModule,
     RouterModule,
     AppRoutingModule
   ],

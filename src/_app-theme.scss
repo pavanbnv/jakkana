@@ -1,6 +1,6 @@
 @import './app/w/w-theme';
 @import './app/p/p-theme';
-@import './assets/styles/inspinia/inspinia-theme';
+//@import './assets/styles/inspinia/inspinia-theme';
 // Styles for the docs app that are based on the current theme.
 @mixin material-jakkana-app-theme($theme) {
     $primary: map-get($theme, primary);
