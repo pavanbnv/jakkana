@@ -1,6 +1,6 @@
 <div class="navbar-default navbar-static-side jakkana-alphasidebar-nav animated fadeInRight" role="navigation">
     <div class="column">
-        <div class="widget mat-elevation-z3 jakkana-alphasidebar-navitem" cdkDrag>
+        <div class="widget mat-elevation-z3 jakkana-alphasidebar-navitem" cdkDrag (cdkDragStarted)="onDragStarted($event)" (cdkDragEnded)="onDragEnded($event)">
             <div class="row">
                 <div class="col-4">
                     <fa-icon [icon]="['fas', 'coffee']" size="3x"></fa-icon>
@@ -11,7 +11,7 @@
                 </div>
             </div>
         </div>
-        <div class="widget mat-elevation-z3 jakkana-alphasidebar-navitem" cdkDrag>
+        <div class="widget mat-elevation-z3 jakkana-alphasidebar-navitem" cdkDrag (cdkDragStarted)="onDragStarted($event)"  (cdkDragEnded)="onDragEnded($event)">
             <div class="row">
                 <div class="col-4">
                     <fa-icon [icon]="['fas', 'cloud']" size="3x"></fa-icon>
@@ -22,7 +22,7 @@
                 </div>
             </div>
         </div>
-        <div class="widget mat-elevation-z3 jakkana-alphasidebar-navitem" cdkDrag>
+        <div class="widget mat-elevation-z3 jakkana-alphasidebar-navitem" cdkDrag (cdkDragStarted)="onDragStarted($event)"  (cdkDragEnded)="onDragEnded($event)">
             <div class="row">
                 <div class="col-4">
                     <fa-icon [icon]="['fas', 'home']" size="3x"></fa-icon>
@@ -33,7 +33,7 @@
                 </div>
             </div>
         </div>
-        <div class="widget mat-elevation-z3 jakkana-alphasidebar-navitem" cdkDrag>
+        <div class="widget mat-elevation-z3 jakkana-alphasidebar-navitem" cdkDrag  (cdkDragStarted)="onDragStarted($event)" (cdkDragEnded)="onDragEnded($event)">
             <div class="row">
                 <div class="col-4">
                     <fa-icon [icon]="['fas', 'thumbs-up']" size="3x"></fa-icon>
