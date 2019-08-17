@@ -1,18 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
 $fa-font-path: "~font-awesome/fonts/";
 @import '~@angular/material/theming';
 //@import '~font-awesome/scss/font-awesome';
-@import '~bootstrap/scss/bootstrap';
-
+@import '~bootstrap/scss/bootstrap.scss';
 @import 'app-theme';
+
 /**@import '~@angular/material/prebuilt-themes/deeppurple-amber.css'*/
 
 @include mat-core();
-
-
 // Define the light theme.
 $primary: mat-palette($mat-indigo);
-$accent:  mat-palette($mat-pink, A200, A100, A400);
+$accent: mat-palette($mat-pink, A200, A100, A400);
 $theme: mat-light-theme($primary, $accent);
+//@include theme-color($theme);
 @include angular-material-theme($theme);
 @include material-jakkana-app-theme($theme);
